@@ -126,3 +126,20 @@ Note: By default `process-compose` will start process from all the configured na
 process-compose -n ns1 -n ns3
 # will start only ns1 and ns3. ns2 namespace won't run and won't be visible in the TUI
 ```
+
+## Misc
+
+#### Strict Configuration Validation
+To avoid minor `proces-compose.yaml` configuration errors and typos it is recommended to enable `is_strict` flag:
+
+```yaml hl_lines="2 5"
+version: "0.5"
+is_strict: true
+processes:
+  process1:
+   commnad: "sleep 1" # <-- notice the typo here
+```
+The above configuration will fail the Process Compose start and exit with error code `1`:
+```shell
+unknown key commnad found in process process1
+```

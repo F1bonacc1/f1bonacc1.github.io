@@ -8,7 +8,7 @@ Because sometimes you just don't want to deal with docker files, volume definiti
 
 <img src="https://github.com/F1bonacc1/process-compose/raw/main/imgs/tui.png" alt="TUI" style="zoom:67%;" />
 
-## Features:
+## Features
 
 - Processes execution (in parallel or/and serially)
 - Processes dependencies and startup order
