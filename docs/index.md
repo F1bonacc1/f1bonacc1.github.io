@@ -1,17 +1,29 @@
-# Welcome to MkDocs
+# Process Compose 🔥
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+Process Compose is a simple and flexible scheduler and orchestrator to manage non-containerized applications.
 
-## Commands
+## Why was it made?
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+Because sometimes you just don't want to deal with docker files, volume definitions, networks and docker registries.
 
-## Project layout
+<img src="https://github.com/F1bonacc1/process-compose/raw/main/imgs/tui.png" alt="TUI" style="zoom:67%;" />
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+## Features:
+
+- Processes execution (in parallel or/and serially)
+- Processes dependencies and startup order
+- Process recovery policies
+- Manual process [re]start
+- Processes arguments `bash` or `zsh` style (or define your own shell)
+- Per process and global environment variables
+- Per process or global (single file) logs
+- Health checks (liveness and readiness)
+- Terminal User Interface (TUI) or CLI modes
+- Forking (services or daemons) processes
+- REST API (OpenAPI a.k.a Swagger)
+- Logs caching
+- Functions as both server and client
+- Configurable shortcuts
+- Merge Configuration Files
+- Namespaces
+- Run Multiple Replicas of a Process

@@ -1,7 +1,25 @@
 site_name: Process Compose
 site_url: https://github.com/F1bonacc1/process-compose
+repo_url: https://github.com/F1bonacc1/process-compose
+repo_name: process-compose
+nav:
+  - Home: index.md
+  - Getting Started:
+    - 'Quick Start': intro.md
+    - Installation: installation.md
+  - Documentation:
+    - 'Processes Lifetime': launcher.md
+    - Logger: logging.md
+    - 'Health Checks': health.md
+    - Configuration: configuration.md
+    - 'Merging Configuration': merge.md
+    - 'Remote Client': client.md
+    - TUI: tui.md
+
 theme:
   name: material
+  favicon: img/favicon.ico
+  logo: img/favicon.ico
   features:
     - navigation.tabs
     - navigation.sections
@@ -18,17 +36,18 @@ theme:
       toggle:
         icon: material/toggle-switch-off-outline 
         name: Switch to dark mode
-      primary: teal
+      primary: blue-grey
       accent: purple 
     - scheme: slate 
       toggle:
         icon: material/toggle-switch
         name: Switch to light mode    
-      primary: teal
+      primary: black
       accent: lime
 
 plugins:
   - social
+  - search
 
 extra:
   social:
